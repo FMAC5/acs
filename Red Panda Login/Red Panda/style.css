@@ -1,0 +1,209 @@
+:root {
+    --color1: rgba(172, 225, 250, 1);
+    --color2: rgba(59, 57, 55, 1);
+    --color3: rgb(255, 255, 255);
+}
+
+::selection {
+    background: var(--color1);
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color1);
+    border-radius: 1em;
+    background: var(--color1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color1_opacity);
+}
+
+input:focus {
+    display: block;
+    outline: none;
+    border: solid 0.25em var(--color1);
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color2)
+}
+.lesson.hide {
+    display: none;
+}
+body {
+    background-color: var(--color1)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-container {
+    margin: 0;
+    padding: 0;
+    max-width: 480px;
+    min-width: 480px;
+    background-color: rgb(255, 208, 0);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-link {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    margin: 0;
+    padding: 0;
+}
+.back {
+    font-size: 35px;
+    color: var(--color3);
+    cursor: pointer;
+    margin: 0;
+        padding: 0;
+}
+
+.download-link {
+    position: absolute;
+    top: 33px;
+    right: 75px;
+    text-decoration: none;
+    color: var(--color3);
+    margin: 0;
+    padding: 0;
+}
+
+.info-link {
+font-size: 35px;
+    color: var(--color3);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    position: absolute;
+        top: 25px;
+        right: 25px;
+        text-decoration: none;
+        color: var(--color3);
+        margin: auto;
+        padding: 0;
+}
+
+.button-link {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    top: 455px;
+    left: 50%;
+    right: 50%; 
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.button {
+    color: var(--color3);
+    margin: 0;
+    padding: 0;
+}
+
+.image-default {
+    background-color: var(--color2);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 480px;
+}
+
+.tutorial-container {
+    background-color: white;
+    padding: 0;
+}
+
+.chapter {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+
+.chapter-span {
+    margin: 0 5px;
+}
+.lesson {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    transform: translate(-50%);
+    font-size: 35px;
+        color: black;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+}
+
+
+.play {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--color1);
+}
+
+.lesson-span {
+    margin: 0 10px
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+.container {
+    margin: 0;
+}
+
+.video-container {
+    border-radius: 0;
+    min-width: 100%;
+}
+
+.image-default {
+border-radius: 0;
+}
+}
